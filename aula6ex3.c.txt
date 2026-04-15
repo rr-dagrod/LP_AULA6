@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int circunferencia (float raio) {
+    float resultado = 2 * 3.14159 * raio;
+    printf("A circunferência do círculo é: %.2fcm", resultado);
+}
+
+int main () {
+    float raio;
+    printf("Insira o raio do círculo em cm: ");
+    scanf("%f", &raio);
+    circunferencia(raio);
+    return 0;
+}

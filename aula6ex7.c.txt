@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int juros_compostos (float investimento, float taxa, float total, int t_lim) {
+    for(int t = 1; t <= t_lim; t++) {
+         total = investimento * pow((1 + taxa),t);
+         printf("O total no mês %d é %.2f\n", t, total);
+    }
+}
+
+int main() {
+    float investimento, taxa, total;
+    int t_lim;
+    printf("Insira o investimento inicial: ");
+    scanf("%f", &investimento);
+    
+    printf("Insira a taxa de juros em %: ");
+    scanf("%f", &taxa);
+    taxa = taxa / 100;
+    
+    printf("Insira por quantos meses o dinheiro ficará investido: ");
+    scanf("%d", &t_lim);
+    
+    juros_compostos(investimento, taxa, total, t_lim);
+    return 0;
+}
