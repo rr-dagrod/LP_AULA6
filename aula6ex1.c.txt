@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void conta(int valorFinal){
+    for(int x = 1; x <= valorFinal; x++){
+        printf("Contagem: %d\n", x);
+    }
+}
+
+void main(){
+    int n;
+    printf("Insira um número: ");
+    scanf("%d", &n);
+    
+    conta(n);
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+float area (float raio) {
+    const float pi = 3.14159;
+    return (pi * (raio * raio));
+}
+
+void main () {
+    float _raio, _area;
+    printf("Insira o raio do círculo em cm: ");
+    scanf("%f", &_raio);
+    
+    _area = area(_raio);
+    printf("%.2f", _area);
+}

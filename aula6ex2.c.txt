@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+float diametro(float raio){
+    return raio * 2;
+}
+
+int main(){
+    float raio;
+    float _diametro;
+    printf("Insira o raio do círculo em cm: ");
+    scanf("%f", &raio);
+    
+    _diametro = diametro(raio);
+    
+    printf("O diâmetro do círculo é: %.2f cm", _diametro);
+}

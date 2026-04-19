@@ -23,5 +23,5 @@ void main () {
     
     _montante = juros_compostos(_valInvestido, _taxaMes, _tempoLimite);
 
-    printf("O valor total após o final do período é: %.2f", _montante);
+    printf("O total de Juros compostos recebido é: %.2f", (_montante-_valInvestido));
 }
